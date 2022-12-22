@@ -16,7 +16,7 @@ public class MemoryMemberRepositoryTest {
 
 
     //클리어 하지 않으면 테스트시 오류 발생 가능성 있다. 매우 중요
-    @AfterEach
+    @AfterEach //해당 annotation 이 달린 메서드가 각 테스트 메서드 이후에 실행된다.
     public void afterEach() {
         repository.clearStore();
     }

@@ -2,10 +2,12 @@ package hello.hellospring.repository;
 
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 //회원 리포지토리 메모리 구현체
+@Repository //밑의 클래스는 컨테이너에 빈 객체로 생성된다. @Service와 비슷한 느낌
 public class MemoryMemberRepository implements MemberRepository{
     //저장하기 위해 Map사용
     private static Map<Long, Member> store = new HashMap<>();
