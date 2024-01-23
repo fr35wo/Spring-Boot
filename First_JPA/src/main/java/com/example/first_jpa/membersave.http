@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/save
+content-type:application/json
+
+{
+  "name" : "dd",
+  "age" : "22",
+  "part" : "SERVER"
+}
+

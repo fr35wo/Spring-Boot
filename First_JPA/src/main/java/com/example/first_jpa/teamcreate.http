@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/team/create
+content-type:application/json
+
+{
+  "teamName": "웹팀",
+  "part": "WEB"
+}
